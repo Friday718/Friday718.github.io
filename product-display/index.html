@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>商品展示页面</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <a href="#">
+                <img src="images/logo.png" alt="Logo~~">
+            </a>
+        </div>
+    </div>
+
+    </div>
+        <!-- 轮播图片 -->
+        <div class="carousel">
+            <div class="carousel-content">
+                <img src="images/slide1.jpg" alt="Slide 1">
+                <img src="images/slide2.jpg" alt="Slide 2">
+                <img src="images/slide3.jpg" alt="Slide 3">
+            </div>
+            <div class="carousel-buttons">
+                <button class="carousel-button" onclick="prevSlide()">&#10094;</button>
+                <button class="carousel-button" onclick="nextSlide()">&#10095;</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="category-nav">
+            <a onclick="showCategory('all')">全部商品</a>
+            <a onclick="showCategory('category1')">分类一</a>
+            <a onclick="showCategory('category2')">分类二</a>
+            <a onclick="showCategory('category3')">分类三</a>
+        </div>
+        <div class="product-list">
+            <div class="product-list">
+                <div class="product category1">
+                    <img src="images/product1-image.jpg" alt="商品1" onclick="showModal('modal1')">
+                    <h1 class="product-title">诺特兰德左旋肉碱100000十万左旋饮料液体运动健身</h1>
+                    <p class="product-description">左旋肉碱的主要功能是作为载体将长链脂肪酸由线粒体膜外转运到膜内,从而促进长链脂肪酸的氧化。</p>
+                    <a href="https://detail.tmall.com/item.htm?spm=a21n57.1.item.11.409810e8CyQxZC&priceTId=214782f417201476906648218ed97d&utparam=%7B%22aplus_abtest%22:%22eda01b753f9ffbbfabfb040141c3b736%22%7D&id=800970900217&ns=1&abbucket=11" target="_blank" class="buy-button">立即购买</a>
+                </div>
+    
+                <div class="product category1">
+                    <img src="images/product2-image.jpg" alt="商品2" onclick="showModal('modal2')">
+                    <h1 class="product-title">诺特兰德复合维生素b族男士多维元素片锌镁矿物质锌硒片</h1>
+                    <p class="product-description">12种维生素枸杞粉6种矿物质米糠脂肪烷醇，镁、锌、铁、碘、硒、锰</p>
+                    <p class="product-price">¥199.00</p>
+                    <a href="https://item.taobao.com/item.htm?id=671569598631&ali_refid=a3_430582_1006:1545660042:N:pgHwZebgTYIVuTJgif03Pu7rIxifeWUR:079b02ba6abd596f2305771f346e5a82&ali_trackid=1_079b02ba6abd596f2305771f346e5a82&spm=a21n57.1.item.1" target="_blank" class="buy-button">立即购买</a>
+                </div>
+    
+                <div class="product category1">
+                    <img src="images/product8-image.jpg" alt="商品3" onclick="showModal('modal3')">
+                    <h1 class="product-title">诺特兰德促睾酮TESTO睾酮素促进剂男性健身增肌增力</h1>
+                    <p class="product-description">三重添加协同睾酮突破肌肉围度每份含50mg人参粉、100mg玛咖粉、植物甾醇</p>
+                    <p class="product-price">¥199.00</p>
+                    <a href="https://item.taobao.com/item.htm?id=775666603533&ali_refid=a3_430582_1006:1681001066:H:VeDr9eNzS+BBMJDN4S1chOzRFXgjAt9I:1cb300c769ed4206268209bf533da225&ali_trackid=282_1cb300c769ed4206268209bf533da225&spm=a21n57.1.item.27&sku_properties=31560:31225320630" target="_blank" class="buy-button">立即购买</a>
+                </div>
+    
+                <div class="product category2">
+                    <img src="images/product3-image.jpg" alt="商品4" onclick="showModal('modal4')">
+                    <h1 class="product-title">诺特兰德电解质粉冲剂电解质水维生素电解质饮料粉</h1>
+                    <p class="product-description">电解质指人体体液中钠、钾、钙、镁等离子,是人体
+                        体液中的重要组成部分。</p>
+                    <p class="product-price">¥199.00</p>
+                    <a href="https://item.taobao.com/item.htm?spm=a21n57.1.item.3.65a8b9aff23Npv&priceTId=214782f417201477263921626ed97d&utparam=%7B%22aplus_abtest%22:%22f643abe4b2a05d65e2fc03b3db4021f9%22%7D&id=692134791456&ns=1&abbucket=11" target="_blank" class="buy-button">立即购买</a>
+                </div>
+    
+                <div class="product category2">
+                    <img src="images/product4-image.jpg" alt="商品5" onclick="showModal('modal5')">
+                    <h1 class="product-title">诺特兰德维生素c多维牛磺酸片vc维c血橙复合b族维生素咀嚼片</h1>
+                    <p class="product-description">每份含100mg维生素C200mg牛磺酸vB1维生素B1vB2维生素B2</p>
+                    <p class="product-price">¥199.00</p>
+                    <a href="https://detail.tmall.com/item.htm?spm=a21n57.1.item.4.64f23fdcq4YE9m&priceTId=214782f417201477406312207ed97d&utparam=%7B%22aplus_abtest%22:%224a4669e2f617e930c3c525ce07796934%22%7D&id=810949163250&ns=1&abbucket=11" target="_blank" class="buy-button">立即购买</a>
+                </div>
+    
+                <div class="product category3">
+                    <img src="images/product5-image.jpg" alt="商品6" onclick="showModal('modal6')">
+                    <h1 class="product-title">诺特兰德生命主义能量加油站复合维生素矿物质片</h1>
+                    <p class="product-description">Zn锌Mg镁Se硒12种维生素</p>
+                    <p class="product-price">¥199.00</p>
+                    <a href="https://detail.tmall.com/item.htm?spm=a21n57.1.item.7.4df37139oMsllT&priceTId=214782f417201477735134032ed97d&utparam=%7B%22aplus_abtest%22:%229e34a3863aff223a850cfcf5e277e71c%22%7D&id=658502682435&ns=1&abbucket=11" target="_blank" class="buy-button">立即购买</a>
+                </div>
+    
+                <div class="product category3">
+                    <img src="images/product6-image.jpg" alt="商品7" onclick="showModal('modal7')">
+                    <h1 class="product-title">诺特兰德电解质功能饮料维他命水维生素牛磺酸钠离子</h1>
+                    <p class="product-description">·每袋电解质>276mg·钠离子 钾离子 锌离子镁离子 氯离子 </p>
+                    <p class="product-price">¥199.00</p>
+                    <a href="https://item.taobao.com/item.htm?spm=a21n57.1.item.3.4fe05493Z0jUFK&priceTId=214782f417201477866614667ed97d&utparam=%7B%22aplus_abtest%22:%22db0fdd2a1be4f95e69959b8ebb9709a7%22%7D&id=810570171343&ns=1&abbucket=11" target="_blank" class="buy-button">立即购买</a>
+                </div>
+    
+                <div class="product category3">
+                    <img src="images/product7-image.jpg" alt="商品8" onclick="showModal('modal8')">
+                    <h1 class="product-title">诺特兰德乳清蛋白质粉分离水解乳清增肌粉健身男女蛋白粉</h1>
+                    <p class="product-description">黄金营养源α-乳清蛋白小分子更易吸收72%必须氨基酸 </p>
+                    <p class="product-price">¥199.00</p>
+                    <a href="https://detail.tmall.com/item.htm?spm=a21n57.1.item.3.63a441d4kddsZT&priceTId=214782f417201478210006287ed97d&utparam=%7B%22aplus_abtest%22:%2295e0d5404791535fa5c969bcc804078c%22%7D&id=683992363559&ns=1&abbucket=11" target="_blank" class="buy-button">立即购买</a>
+                </div
+            <!-- 添加更多商品卡片 -->
+        </div>
+    </div>
+
+    <!-- 商品详情模态框 -->
+    <!-- 弹窗 -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal1')">&times;</span>
+            <h2>详情页展示，图片、文字等</h2>
+            <p></p>
+            <p></p>
+            <img src = "images/product1-image.jpg" >
+            <p></p>
+            <a href="https://detail.tmall.com/item.htm?spm=a21n57.1.item.11.409810e8CyQxZC&priceTId=214782f417201476906648218ed97d&utparam=%7B%22aplus_abtest%22:%22eda01b753f9ffbbfabfb040141c3b736%22%7D&id=800970900217&ns=1&abbucket=11" target="_blank" class="buy-button">立即购买</a>
+        </div>
+    </div>
+
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal2')">&times;</span>
+            <h2>详情页展示，图片、文字等</h2>
+            <p></p>
+            <p></p>
+            <img src = "images/product2-image.jpg" >
+            <p></p>
+            <a href="https://item.taobao.com/item.htm?id=671569598631&ali_refid=a3_430582_1006:1545660042:N:pgHwZebgTYIVuTJgif03Pu7rIxifeWUR:079b02ba6abd596f2305771f346e5a82&ali_trackid=1_079b02ba6abd596f2305771f346e5a82&spm=a21n57.1.item.1" target="_blank" class="buy-button">立即购买</a>
+        </div>
+    </div>
+
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal3')">&times;</span>
+            <h2>详情页展示，图片、文字等</h2>
+            <p></p>
+            <p></p>
+            <img src = "images/product8-image.jpg" >
+            <p></p>
+            <a href="https://item.taobao.com/item.htm?id=775666603533&ali_refid=a3_430582_1006:1681001066:H:VeDr9eNzS+BBMJDN4S1chOzRFXgjAt9I:1cb300c769ed4206268209bf533da225&ali_trackid=282_1cb300c769ed4206268209bf533da225&spm=a21n57.1.item.27&sku_properties=31560:31225320630" target="_blank" class="buy-button">立即购买</a>
+        </div>
+    </div>
+
+    <div id="modal4" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal4')">&times;</span>
+            <h2>详情页展示，图片、文字等</h2>
+            <p></p>
+            <p></p>
+            <img src = "images/product3-image.jpg" >
+            <p></p>
+            <a href="https://item.taobao.com/item.htm?spm=a21n57.1.item.3.65a8b9aff23Npv&priceTId=214782f417201477263921626ed97d&utparam=%7B%22aplus_abtest%22:%22f643abe4b2a05d65e2fc03b3db4021f9%22%7D&id=692134791456&ns=1&abbucket=11" target="_blank" class="buy-button">立即购买</a>
+        </div>
+    </div>
+
+    <div id="modal5" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal5')">&times;</span>
+            <h2>详情页展示，图片、文字等</h2>
+            <p></p>
+            <p></p>
+            <img src = "images/product4-image.jpg" >
+            <p></p>
+            <a href="https://detail.tmall.com/item.htm?spm=a21n57.1.item.4.64f23fdcq4YE9m&priceTId=214782f417201477406312207ed97d&utparam=%7B%22aplus_abtest%22:%224a4669e2f617e930c3c525ce07796934%22%7D&id=810949163250&ns=1&abbucket=11" target="_blank" class="buy-button">立即购买</a>
+        </div>
+    </div>
+
+    <div id="modal6" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal6')">&times;</span>
+            <h2>详情页展示，图片、文字等</h2>
+            <p></p>
+            <p></p>
+            <img src = "images/product5-image.jpg" >
+            <p></p>
+            <a href="https://detail.tmall.com/item.htm?spm=a21n57.1.item.7.4df37139oMsllT&priceTId=214782f417201477735134032ed97d&utparam=%7B%22aplus_abtest%22:%229e34a3863aff223a850cfcf5e277e71c%22%7D&id=658502682435&ns=1&abbucket=11" target="_blank" class="buy-button">立即购买</a>
+        </div>
+    </div>
+
+    <div id="modal7" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal7')">&times;</span>
+            <h2>详情页展示，图片、文字等</h2>
+            <p></p>
+            <p></p>
+            <img src = "images/product6-image.jpg" >
+            <p></p>
+            <a href="https://item.taobao.com/item.htm?spm=a21n57.1.item.3.4fe05493Z0jUFK&priceTId=214782f417201477866614667ed97d&utparam=%7B%22aplus_abtest%22:%22db0fdd2a1be4f95e69959b8ebb9709a7%22%7D&id=810570171343&ns=1&abbucket=11" target="_blank" class="buy-button">立即购买</a>
+        </div>
+    </div>
+
+    <div id="modal8" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal8')">&times;</span>
+            <h2>详情页展示，图片、文字等</h2>
+            <p></p>
+            <p></p>
+            <img src = "images/product7-image.jpg" >
+            <p></p>
+            <a href="https://detail.tmall.com/item.htm?spm=a21n57.1.item.3.63a441d4kddsZT&priceTId=214782f417201478210006287ed97d&utparam=%7B%22aplus_abtest%22:%2295e0d5404791535fa5c969bcc804078c%22%7D&id=683992363559&ns=1&abbucket=11" target="_blank" class="buy-button">立即购买</a>
+        </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
